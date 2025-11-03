@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loteria</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Lotería Mexicana - Nivel 3</h1>
+
+    <form  method="get">
+        <label for="columnas" class="etiqueta">Ingrese cantidad de columnas:</label>
+        <input type="number" id="columnas" name="columnas" min="1" value="{{ columnas }}" required>
+        <label for="fila" class="etiqueta">Ingrese cantidad de fila:</label>
+        <input type="number" id="filas" name="filas" min="1" value="{{ filas }}" required>
+        <button type="submit"> Generar tablero </button>
+    </form>
+   
+    <div class="container">
+        {% for fila in grid %}
+        <div class="fila">
+            {% for caja in fila %}
+            <div class="color-box {{ caja.color }}">
+            {{caja.texto}}
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+
+     <!-- Enlace para volver al nivel 1 -->
+    <form action="{{ url_for('index') }}" method="get">
+        <button type="submit"> Volver a nivel 1 </button>
+    </form>
+
+</body>
+</html>

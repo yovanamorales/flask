@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 5px;
+}
+
+.fila {
+    display: flex;
+    gap: 5px;
+}
+
+.color-box {
+    border-radius: 2px;
+    border: 1px solid #333;
+    width: 80px;
+    height: 100px;
+}
+
+.rosa {
+    background: #dda8c4; 
+   
+}
+
+.amarillo {
+    background: #eadb00; 
+    
+}
+
+.azul {
+    background: #287fe4; 
+    
+}
+ 
+h1{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 8px;
+}
+
+button {
+    margin-top: 10px;
+    width: 150px;
+    padding: 7px;
+    background-color: #575e65;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.etiqueta{
+    font-size: 16px;
+    font-weight: bold;
+}
+#filas{
+    width: 40px;
+}
+#columnas{
+    width: 40px;
+}
