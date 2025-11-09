@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador de Visitas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Visitas</h1>
+        
+        <div class="caja">
+            <div class="caja1">
+                <h2>Visitas</h2>
+                <p class="contar">{{ contador_visitas }}</p>
+            </div>
+            <div class="caja1">
+                <h2>Reinicios</h2>
+                <p class="contar">{{ contador_reinicios }}</p>
+            </div>
+        </div>
+
+        <div class="acciones">
+            <a href="{{ url_for('aumentar_visitas') }}" class="boton">Aumentar + 2</a>
+            <a href="{{ url_for('reset') }}" class="boton"> Reiniciar a 0</a>
+            <a href="{{ url_for('destruir_sesion') }}" class="boton">Destruir Sesión</a>
+        </div>
+
+        <div class="cajaformulario">
+            <h3> Aumentar visitas </h3>
+            <form action="{{ url_for('enviar_formulario') }}" method="POST" class="formulario">
+                <input type="number" name="aumento" min="1" placeholder="Ingresa número" required>
+                <button type="submit" class="boton"> Aumentar visitas</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
