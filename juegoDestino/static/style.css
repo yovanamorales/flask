@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: rgba(23, 72, 232, 0.95);
+    border-radius: 15px;
+    padding: 40px;
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    color: black;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #7f8c8d;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos del formulario */
+form {
+    text-align: left;
+}
+
+.caja {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: black;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 550px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Estilos del botón */
+.btn {
+    display: inline-block;
+    background: rgb(82, 172, 236);
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+/* Estilos de futuro */
+.predicccion {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.container {
+    padding: 20px;
+}
+    
+h1 {
+    font-size: 1.8rem;
+}
